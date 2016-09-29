@@ -1,4 +1,4 @@
-FROM lsiobase/alpine
+FROM lsiobase/alpine.armhf
 MAINTAINER sparklyballs
 
 # environment settings
