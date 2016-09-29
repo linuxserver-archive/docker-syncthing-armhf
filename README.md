@@ -58,6 +58,7 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 
 ## Setting up the application
 `IMPORTANT... THIS IS THE ARMHF VERSION`
+
 You can find some of the best documentation available on the web at [docs.syncthing.net](http://docs.syncthing.net/).
 
 **Note: ** The Syncthing devs highly suggest setting a password for this container as it listens on 0.0.0.0. To do this go to `Actions -> Settings -> set user\password` for the webUI.
