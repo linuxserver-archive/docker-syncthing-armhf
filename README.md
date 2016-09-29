@@ -10,7 +10,7 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 * [IRC][ircurl] on freenode at `#linuxserver.io`
 * [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
-# linuxserver/syncthing
+# lsioarmhf/syncthing
 [![](https://images.microbadger.com/badges/image/linuxserver/syncthing.svg)](http://microbadger.com/images/linuxserver/syncthing "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/syncthing.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/syncthing.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-syncthing)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-syncthing/)
 [hub]: https://hub.docker.com/r/linuxserver/syncthing/
 
@@ -30,7 +30,7 @@ docker create \
   -v *host path to data*:/mnt/any/dir/you/want \
   -e PGID=<gid> -e PUID=<uid>  \
   -p 8384:8384 -p 22000:22000 -p 21027:21027/udp \
-  linuxserver/syncthing
+  lsioarmhf/syncthing
 ```
 
 **Parameters**
@@ -57,7 +57,7 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 ```
 
 ## Setting up the application
-
+`IMPORTANT... THIS IS THE ARMHF VERSION`
 You can find some of the best documentation available on the web at [docs.syncthing.net](http://docs.syncthing.net/).
 
 **Note: ** The Syncthing devs highly suggest setting a password for this container as it listens on 0.0.0.0. To do this go to `Actions -> Settings -> set user\password` for the webUI.
@@ -69,6 +69,7 @@ You can find some of the best documentation available on the web at [docs.syncth
 
 ## Versions
 
++ **29.09.16:** ARM version. 
 + **09.09.16:** Add layer badges to README. 
 + **28.08.16:** Add badges to README. 
 + **11.08.16:** Rebase to alpine linux. 
