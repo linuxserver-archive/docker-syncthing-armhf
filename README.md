@@ -11,8 +11,8 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 * [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
 # lsioarmhf/syncthing
-[![](https://images.microbadger.com/badges/image/linuxserver/syncthing.svg)](http://microbadger.com/images/linuxserver/syncthing "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/syncthing.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/syncthing.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-syncthing)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-syncthing/)
-[hub]: https://hub.docker.com/r/linuxserver/syncthing/
+[![](https://images.microbadger.com/badges/image/lsioarmhf/syncthing.svg)](https://microbadger.com/images/lsioarmhf/syncthing "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/syncthing.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/syncthing.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-armhf/lsioarmhf-syncthing)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-armhf/job/lsioarmhf-syncthing/)
+[hub]: https://hub.docker.com/r/lsioarmhf/syncthing/
 
 Syncthing replaces proprietary sync and cloud services with something open, trustworthy and decentralized. Your data is your data alone and you deserve to choose where it is stored, if it is shared with some third party and how it's transmitted over the Internet.
 
@@ -70,4 +70,4 @@ You can find some of the best documentation available on the web at [docs.syncth
 
 ## Versions
 
-+ **29.09.16:** ARM version. 
++ **01.10.16:** Initial Release. 
