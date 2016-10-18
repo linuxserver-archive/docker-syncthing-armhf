@@ -84,5 +84,5 @@ You can find some of the best documentation available on the web at [docs.syncth
 
 ## Versions
 
-+ **14-10-16:** Add version layer information.
++ **14.10.16:** Add version layer information.
 + **01.10.16:** Initial Release. 
