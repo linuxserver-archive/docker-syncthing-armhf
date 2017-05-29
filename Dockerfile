@@ -1,4 +1,4 @@
-FROM lsiobase/alpine.armhf:3.5
+FROM lsiobase/alpine.armhf:3.6
 MAINTAINER sparklyballs
 
 # set version label
@@ -9,11 +9,11 @@ LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DA
 # environment settings
 ENV HOME="/config"
 
-# set build and source folders
+# set build and source folders
 ARG SYNC_SRC="/tmp/syncthing"
 ARG SYNC_BUILD="$SYNC_SRC/src/github.com/syncthing"
 
-# install build packages
+# install build packages
 RUN \
  apk add --no-cache --virtual=build-dependencies \
 	curl \
@@ -22,7 +22,7 @@ RUN \
 	go \
 	tar && \
 
-# compile syncthing
+# compile syncthing
  SYNC_TAG=$(curl -sX GET "https://api.github.com/repos/syncthing/syncthing/releases/latest" \
 	| awk '/tag_name/{print $4;exit}' FS='[""]') && \
  mkdir -p \
@@ -39,7 +39,7 @@ RUN \
  export GOPATH="${SYNC_SRC}" && \
  go run build.go -no-upgrade -version=${SYNC_TAG} && \
 
-# install syncthing
+# install syncthing
  install -d -o abc -g abc \
 	/var/lib/syncthing && \
  install -D -m755 \
@@ -52,7 +52,7 @@ RUN \
  done && \
  export GOPATH="" && \
 
-# cleanup
+# cleanup
  apk del --purge \
 	build-dependencies && \
  rm -rf \
