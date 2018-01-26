@@ -86,6 +86,7 @@ You can find some of the best documentation available on the web at [docs.syncth
 
 ## Versions
 
++ **26.01.18:** Rebase ta alpine 3.7.
 + **25.10.17:** Add env for manual setting of umask.
 + **29.07.17:** Simplify build structure as symlinks failing on > 0.14.32
 + **30.05.17:** Rebase ta alpine 3.6.
