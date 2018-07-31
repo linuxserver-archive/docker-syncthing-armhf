@@ -86,6 +86,7 @@ You can find some of the best documentation available on the web at [docs.syncth
 
 ## Versions
 
++ **30.07.18:** Rebase to alpine 3.8 and use buildstage.
 + **26.01.18:** Rebase ta alpine 3.7.
 + **25.10.17:** Add env for manual setting of umask.
 + **29.07.17:** Simplify build structure as symlinks failing on > 0.14.32
