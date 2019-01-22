@@ -5,6 +5,8 @@
 [appurl]: https://syncthing.net
 [hub]: https://hub.docker.com/r/lsioarmhf/syncthing/
 
+THIS IMAGE IS DEPRECATED. PLEASE USE THE MULTI-ARCH IMAGES AT `linuxserver/syncthing`
+
 [![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)][linuxserverurl]
 
 The [LinuxServer.io][linuxserverurl] team brings you another container release featuring easy user mapping and community support. Find us for support at:
@@ -86,6 +88,7 @@ You can find some of the best documentation available on the web at [docs.syncth
 
 ## Versions
 
++ **22.01.19:** This image is deprecated. Please use the multi-arch images at linuxserver/syncthing
 + **30.07.18:** Rebase to alpine 3.8 and use buildstage.
 + **26.01.18:** Rebase ta alpine 3.7.
 + **25.10.17:** Add env for manual setting of umask.
